@@ -1,12 +1,46 @@
 .navbar{
-    background-color: #6CC24A;
+    background-color: #5695e7ef;
     color: antiquewhite;
 }
-.quemsou{
-    margin-top: 19px;
+.tit{
+    font-family: 'Cinzel Decorative', cursive;
+    color:white
+}
+.menu{
+    color: white
+}
+.predio{
+    margin-top: 15%;
+}
+.margesq{
+    margin-top: 40%;
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+
+
+}
+.margdir{
+    margin-top: 100%;
+    font-family: 'Satisfy', cursive;
+    font-size:25px;
+
+}
+.sala{
+    margin-top: 30px;
     padding: 15px;
 }
+.textosala{
+    margin-top: 30%;
+}
+.historia{
+    margin-top: 100px;
+    padding: 30px;
+}
 .lanc{
-    margin-top: 19px;
-    padding: 15px;
+    font-family: 'Satisfy', cursive;
+    margin-top: 158px;
+
+}
+.lancamentos {
+    text-align: justify;
 }
