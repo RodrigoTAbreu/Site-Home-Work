@@ -1,3 +1,6 @@
+body{
+    font-family: 'Noto Serif', serif;;
+}
 .navbar{
     background-color: #5695e7ef;
     color: antiquewhite;
@@ -16,8 +19,6 @@
     margin-top: 40%;
     font-family: 'Satisfy', cursive;
     font-size: 30px;
-
-
 }
 .margdir{
     margin-top: 100%;
@@ -38,9 +39,18 @@
 }
 .lanc{
     font-family: 'Satisfy', cursive;
-    margin-top: 158px;
+    margin-top: 90px;
 
 }
 .lancamentos {
     text-align: justify;
+}
+#resultado{
+    margin-top: 30px;
+}
+.resultado{
+    margin-top: 60px;
+}
+h5{
+    margin-top: 60px;
 }
