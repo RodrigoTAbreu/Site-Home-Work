@@ -54,3 +54,28 @@ body{
 h5{
     margin-top: 60px;
 }
+div#popup{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    background-color: rgba(118, 233, 220, 0.863);
+    display: none;
+
+}
+div#enviado{
+    
+    color: black;
+
+}
+form#formulario{
+    text-align: center;
+    ;
+}
+p#form{
+    text-align: center;
+    
+   
+}
+footer#footer{
+    margin-top: 20%;
+}
