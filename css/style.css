@@ -1,5 +1,6 @@
 body{
-    font-family: 'Noto Serif', serif;;
+    font-family: 'Noto Serif', serif;
+
 }
 .navbar{
     background-color: #5695e7ef;
@@ -14,7 +15,7 @@ body{
 }
 .predio{
     margin-top: 15%;
- 
+    
 }
 .historia{
     margin-top: 50px;
@@ -22,7 +23,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-   background-image: url(/img/FUNDO-PRG.jpg);
+    background-image: url(/img/FUNDO-PRG.jpg);
 }
 .margesq{
     margin-top: 40%;
@@ -46,15 +47,21 @@ body{
 .lanc{
     font-family: 'Satisfy', cursive;
     margin-top: 90px;
+    
 
 }
+
+#lanc-img{
+    border-radius: 10%;
+}
+
 .lanc-2021{
     text-align: right;
     color:black;
     width: 100%;
     height: 20rem;
-    margin-top: 50px;
     border-radius: 60px;
+    margin-top: 50px;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -63,6 +70,12 @@ body{
 }
 .lancamentos {
     text-align: justify;
+    
+}
+.bloco-lanc{
+    margin-top: 5%;
+    margin-bottom: 15%;
+    
 }
 .fundo-img{
     width: 200px;
@@ -71,8 +84,13 @@ body{
 
 }
 #resultado{
-    margin-top: 30px;
+    margin-top: 15%;
+    margin-bottom: 20%;
 }
+.img-resultado{
+    border-radius: 15%;
+}
+
 .resultado{
     margin-top: 60px;
 }
@@ -94,13 +112,30 @@ div#enviado{
 }
 form#formulario{
     text-align: center;
-    ;
+    
 }
 p#form{
     text-align: center;
     
-   
+}
+section#form-contato{
+    margin-top: 30%;
+    width: 80%;
+    height: 50%;
+    margin-left: 10%;
+}
+section#form-contato h3{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.contat{
+    padding: 10%;
+    
+}
+p.name-foot{
+    color:black;
 }
 footer#footer{
     margin-top: 20%;
+    color: black;
 }

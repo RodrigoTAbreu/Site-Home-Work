@@ -31,7 +31,7 @@
                         <a class="nav-link menu" href="#resultado">Espaço Empreenda</a>
                     </li>
                     <li>
-                        <a class="nav-link menu" href="#contato">Contato</a>
+                        <a class="nav-link menu" href="#form-contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -74,17 +74,17 @@
                 <h3 class="maring lanc">LANÇAMENTOS</h3>
                 <p><h4>Não fique de fora dessa oportunidade</h4></p>
                 <div class="container">
-                    <div class="row">
+                    <div class="row bloco-lanc" >
                         <div class="col-lg-4">
-                            <img src="img/salas-individuais.jpg" alt="Salas Confortáveis" width="100%">
+                            <img id="lanc-img" src="img/mesas-individuais.jpg" alt="Salas Confortáveis" width="100%" height="64%">
                             <p class="lancamentos">Espaço individulizado, para sua maior comodidade, podendo delimitar o tempo em que deseja se avisado ou interrompido, privacidade é tudo para um ótimo desempenho das suas atividades.</p>
                         </div>
                         <div class="col-lg-4">
-                            <img src="img/cha-literatura.jpg" alt="Espaço Personalizado" width="100%">
+                            <img id="lanc-img" src="img/cha-literatura.jpg" alt="Espaço Personalizado" width="100%">
                             <p class="lancamentos">Traga o conforto da sua casa, para um escritório compartilhado. Temos nosso café atendendo de forma exclusiva para você. Confira nossos pacotes de OPEN BAR e sirva-se a vontade.</p>
                         </div>
                         <div class="col-lg-4">
-                            <img src="img/businessman.jpg" alt="Seu foco" width="100%">
+                            <img id="lanc-img" src="img/dispositivos.jpg" alt="Seu foco" width="100%">
                             <p class="lancamentos">Dispositivos a sua mão. Se precisar alugar algum dispositivo específico para uma apresentação, video conferência ou até mesmo para trabalhar, fale conosco e veja nossos preços.</p>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
         <section id="resultado">
             <div class="row no-gutters bg-light position-relative ">
                 <div class="col-md-6 mb-md-0 p-md-4">
-                    <img src="img/mulher.jpg" class="w-100 resultado" >
+                    <img src="img/mulher.jpg" class="w-100 resultado img-resultado" >
                 </div>
                 <div class="col-md-6 position-static p-4 pl-md-0">
                     <h5> Resultado Certo</h5>
@@ -121,54 +121,70 @@
           </div>
         </div>
 
-        <section id="contato">
-          <!-- Flexbox container for aligning the toasts -->
-            <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center" style="height: 200px;">
-
-          <!-- Then put toasts within -->
-            <div id="contat" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-              <div class="toast-header">
-                <img src="img/phone-call.svg" class="rounded mr-2" alt="...">
-                  <strong class="mr-auto">Entre em contato com nossa Central</strong>
-                    <small>Atendemos em todo Brasil</small>
-                      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                </div>
-            <div class="toast-body" >
-                Solicite agora o contato de um Representante
-                <a href="javascript:;" onclick="abrir('popup')">CLIQUE AQUI</a>
+<!--Formulário Contato-->
+        <section id="form-contato">
+          <form>
+            <div class="contat">
+              <H3>Contato</H3>
+              <p>Envie seus dados e teremos o prazer de fazer contato com você para sonhar-mos o seu sonho de empreender juntos. Vamos lá ? Não vai levar muito tempo.</p>
+            </div>
+            
+            <div class="form-row">
+              
+              <div class="form-group col-md-6">
                 
-                <div id="popup"> 
-                  <a href="javascript:;" onclick="fechar('popup')">FECHAR</a>
-                  <p id="form"> Informe os dados abaixo: </p>
-                   <form  id="formulario" onsubmit="javascript:env();">
-                        <label for="txtnome">Nome:</label>
-                        <input type="text" name="txtnome" id="txtnome"></p>
-                     <p> <label for="txtcidade">Cidade:</label>
-                        <input type="text" name="txtcidade" id="txtcidade"></p>
-                     <p> <label for="txttel">Tel.:  </label>
-                        <input type="text" name="txttel" id="txttel"> </p>
-                     <p> <label for="txtorigem">Como Conheceu a Works:</label></p>
-                        <input type="radio" name="txtorigem" id="txtorigem"> - Indicação |
-                        
-                        <input type="radio" name="txtorigem" id="txtorigem"> - Internet |
-                        
-                        <input type="radio" name="txtorigem" id="txtorigem">  - Outras formas         
-                       
-                        <p> <input type="submit" value="Enviar" onclick="env(popup)"></p> 
+                <input type="text" class="form-control" id="validationTooltip01 input-envia" placeholder="Nome" required>
+              </div>
+              <div class="form-group col-md-6">
+                
+                <input type="email" class="form-control" id="inputEmail4 input-envia" placeholder="Seu E-mail Aqui">
+                
+              </div>
+            </div>
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="inputAddress input-envia" placeholder="Endereço (Rua/Av./Estrada)">
+            </div>
+          
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                
+                <input type="text" class="form-control" id="inputCity input-envia" placeholder="Cidade">
+              </div>
+              <div class="form-group col-md-4">
+                
+                <select id="inputState input-envia" class="form-control" aria-placeholder="Estado">
+                  <option selected>Estado</option>
+                  <option >RJ</option>
+                  <option >SP</option>
+                  <option >PR</option>
+                  <option >SC</option>
+                  <option >RS</option>
+                  <option >MG</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+              
+                <input type="text" class="form-control" id="inputZip input-envia" >
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <button id="enviar" onclick="envia()" type="submit" class="btn btn-primary">Enviar</button>
+          </form>
 
-                    </form>
-                  </p>
-                  <div id="enviado">
-                    <!---<a href="javaascript:;"></a>-->
-                  </div>
-                </div>
 
+        </section>
                 <script src="js/script.js">
                 
                 </script>
-                </script>
+                
             </div>
           </div>
         </div>  
@@ -180,22 +196,22 @@
 
         <footer id="footer" class="p-3 mb-2 bg-info text-white page-footer font-small">
 
-            <!-- Footer Links -->
+            
             <div class="container text-center text-md-left">
           
-              <!-- Footer links -->
+          
               <div class="row text-center text-md-left mt-3 pb-3">
           
-                <!-- Grid column -->
+              
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                   <h6 class="mb-4 font-weight-bold tit">WORK Home</h6>
                   <p>Nossa cede está localizada em Houston, TX. Será um imenso prazer em ter você como nosso parceiro. Para isso, entre em contato conosco e venha fazer parte de um time vencedor. </p>
                 </div>
-                <!-- Grid column -->
+        
           
                 <hr class="w-100 clearfix d-md-none">
           
-                <!-- Grid column -->
+           
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                   <h6 class="text-uppercase mb-4 font-weight-bold">Work no Mundo</h6>
                   <p>
@@ -211,13 +227,10 @@
                     Paris
                   </p>
                 </div>
-                <!-- Grid column -->
+           
           
                 <hr class="w-100 clearfix d-md-none">
-          
-               
-                <!-- Grid column -->
-                    
+                           
                             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                   <h6 class="text-uppercase mb-4 font-weight-bold">Contato</h6>
                   <p>
@@ -229,57 +242,25 @@
                   <p>
                     <i class="fas fa-print mr-3"></i> + 55 11 3999-9999</p>
                 </div>
-                <!-- Grid column -->
-          
               </div>
-              <!-- Footer links -->
-          
               <hr>
-          
-              <!-- Grid row -->
               <div class="row d-flex align-items-center">
           
-                <!-- Grid column -->
+               
                 <div class="col-md-7 col-lg-8">
           
-                  <!--Copyright-->
-                  <p class="text-center text-md-left">© 2020 Copyright:
+                 
+                  <p class="text-center text-md-left name-foot">© 2020 Copyright: Rodrigo Abreu
                     <a href="mailto:rodrigo.telles.abreu@gmail.com">
-                      <strong> Rodrigo Abreu</strong>
+                     
                     </a>
                   </p>
           
                 </div>
-                <!-- Grid column -->
-          
-                <!-- Grid column -->
+
                 <div class="col-md-5 col-lg-4 ml-lg-0">
           
-                  <!-- Social buttons -->
-                  <div class="text-center text-md-right">
-                    <ul class="list-unstyled list-inline">
-                      <li class="list-inline-item">
-                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                          <i class="fab fa-facebook-f"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                          <i class="fab fa-twitter"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                          <i class="fab fa-google-plus-g"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                          <i class="fab fa-linkedin-in"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                
           
                 </div>
                 <!-- Grid column -->
