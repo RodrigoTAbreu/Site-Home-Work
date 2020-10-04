@@ -4,14 +4,17 @@
 
 
 function envia(){
-  let nome = document.getElementById('nome')
-  let name = Text(nome.value);
-  
+  let nome = document.getElementById('tnome').value
+  let mail = document.getElementById('tmail').value
+  let phone = document.getElementById('tphone').value
+
 
   let msg = document.getElementById('msg')
 
 
-  msg.innerHTML = ` Obrigado ${name} , confira agora sua caixa de email em , confirme seu cadastro e entraremos em contato. `;
+  msg.innerHTML = `Olá ${nome} , confira agora sua caixa de email em ${mail}, confirme seu cadastro, em breve entraremos em contato no telefone ${phone}. Obrigado !!`;
+
+  document.getElementById('tnome').value = ''
 
 
 }
