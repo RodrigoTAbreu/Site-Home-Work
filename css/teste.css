@@ -1,0 +1,15 @@
+a:link, a:visited{
+    color: black;
+    background-color: whitesmoke;
+    text-decoration: none;
+    padding: 15px 18px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 28px;
+}
+
+a:hover, a:active{
+    color: whitesmoke;
+    background-color: blue;
+
+}
